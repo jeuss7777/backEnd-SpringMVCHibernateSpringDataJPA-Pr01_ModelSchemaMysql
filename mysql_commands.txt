@@ -1,0 +1,2 @@
+mysql -uroot -p employee < EmployeeDB.sql
+mysqldump -hlocalhost -uroot -p ecomm --compact --no-data > mySql_ecomm.sql
