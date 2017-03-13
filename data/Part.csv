@@ -1,0 +1,351 @@
+pa_sku_nb,pa_part_nb,pa_description,pa_catgry_nm,pa_vendor_nb,pa_cost_am,pa_price_am
+1001,LW-92254-O,sed sagittis nam congue risus,Music,20,49.30,63.26
+1002,CI-88171-Y,nulla mollis,Computers,21,26.86,37.27
+1003,ZM-60108-I,bibendum felis sed,Health,77,13.53,16.27
+1004,ST-22604-W,mauris laoreet ut rhoncus,Music,35,43.66,51.43
+1005,QF-32822-F,feugiat et eros vestibulum,Games,23,7.89,10.51
+1006,QF-04516-D,neque vestibulum eget vulputate,Grocery,4,16.54,19.44
+1007,BH-52590-X,purus phasellus in,Electronics,11,31.53,42.38
+1008,PS-78972-E,sociis natoque penatibus et magnis,Outdoors,43,37.62,46.3
+1009,KN-09922-Y,in leo maecenas pulvinar lobortis,Shoes,41,43.44,50.78
+1010,RS-17935-M,dapibus at diam nam,Books,61,11.55,15.49
+1011,JR-09373-Q,semper sapien,Sports,58,35.73,47.08
+1012,LK-07937-J,sed nisl nunc rhoncus,Baby,13,36.28,48.67
+1013,TR-29940-T,lorem quisque ut,Books,63,2.47,3.05
+1014,CE-28548-V,erat fermentum,Electronics,19,32.28,40.14
+1015,XT-27894-U,dolor vel est donec,Clothing,80,13.62,18.46
+1016,SD-84171-F,risus praesent lectus vestibulum,Beauty,33,31.65,39.69
+1017,SF-59028-E,diam nam tristique tortor eu,Industrial,12,40.21,52.35
+1018,UP-66378-I,dolor quis,Toys,59,40.08,55.92
+1019,FP-60139-R,integer pede justo,Outdoors,67,27.79,32.86
+1020,MO-57376-I,sit amet consectetuer adipiscing,Shoes,22,27.76,32.17
+1021,AP-66439-X,sit amet consectetuer,Sports,78,14.22,18.67
+1022,NS-38236-N,vivamus vestibulum sagittis,Kids,53,33.55,42.93
+1023,EJ-30492-G,posuere cubilia curae mauris,Shoes,34,21.78,26.18
+1024,NG-99624-O,sit amet,Baby,38,1.76,2.24
+1025,ZE-61676-K,ridiculus mus vivamus,Beauty,74,33.86,40.53
+1026,GD-50983-K,ut dolor morbi vel,Computers,16,0.79,0.95
+1027,WH-65546-F,cubilia curae duis faucibus,Baby,23,14.84,20.53
+1028,OR-09431-R,in consequat ut nulla sed,Industrial,73,30.22,37.3
+1029,WR-33094-M,nisl nunc nisl,Games,47,43.10,54.46
+1030,KA-53864-P,parturient montes nascetur,Movies,48,35.92,46.13
+1031,OH-69195-Q,nulla eget eros elementum pellentesque,Movies,43,33.26,46.24
+1032,YO-12405-B,cubilia curae,Games,44,16.67,20.24
+1033,AT-48247-A,luctus et ultrices posuere,Games,43,2.27,2.91
+1034,BG-81704-B,dapibus dolor vel,Toys,54,15.00,20.41
+1035,SL-47652-N,diam cras pellentesque volutpat dui,Industrial,56,7.19,9.47
+1036,LZ-25878-A,augue luctus tincidunt nulla,Toys,33,15.69,19.29
+1037,GW-49683-Y,leo odio porttitor id consequat,Shoes,36,13.62,18.87
+1038,SL-05932-C,habitasse platea dictumst etiam faucibus,Outdoors,6,26.71,32.55
+1039,TJ-29427-K,arcu adipiscing molestie hendrerit,Beauty,67,8.48,10.34
+1040,XY-46536-M,pulvinar sed,Kids,76,11.56,15.57
+1041,BP-17357-Y,ut massa,Clothing,49,21.33,27.98
+1042,SB-91275-L,nibh in quis justo,Automotive,33,2.18,2.75
+1043,NT-87619-G,turpis sed ante vivamus tortor,Computers,70,20.63,24.27
+1044,ZD-63263-O,habitasse platea dictumst morbi,Games,49,15.88,20.16
+1045,YX-99899-V,lacinia aenean,Shoes,36,7.06,9.36
+1046,IC-06027-C,luctus et ultrices,Garden,30,9.59,11.65
+1047,ZU-22796-D,vel augue vestibulum ante,Games,15,36.96,50.57
+1048,CD-39628-U,metus sapien ut nunc,Toys,59,9.79,12.68
+1049,GU-70042-Q,nunc proin,Movies,42,16.34,21.53
+1050,MS-10127-G,eleifend quam a odio,Outdoors,25,16.11,18.77
+1051,XW-68859-G,lobortis ligula sit,Shoes,33,34.97,41.93
+1052,YD-15518-X,pede justo eu massa,Movies,61,8.27,11.52
+1053,CZ-56179-M,molestie hendrerit at vulputate,Automotive,66,42.82,52.3
+1054,MT-22931-U,cursus urna ut,Kids,57,39.96,54.63
+1055,JN-99330-H,blandit mi in porttitor,Grocery,15,20.75,27.6
+1056,SB-79279-W,elementum ligula vehicula consequat,Automotive,22,5.48,7.15
+1057,QX-86669-P,donec posuere,Health,72,29.66,36.79
+1058,WL-36633-Z,sapien non mi integer ac,Music,80,2.24,3.07
+1059,SJ-94821-E,habitasse platea dictumst aliquam,Baby,78,24.28,33.59
+1060,GS-15570-W,sed magna at nunc commodo,Jewelery,46,42.01,58.23
+1061,HJ-71430-R,in est risus auctor sed,Books,23,13.93,16.25
+1062,QH-90563-N,consequat morbi a ipsum,Tools,72,5.89,7.77
+1063,SZ-75670-G,eu mi nulla,Health,55,32.93,43.57
+1064,XT-12412-H,vivamus metus,Health,29,4.44,5.19
+1065,ZD-93272-J,sit amet lobortis,Toys,76,49.01,58.54
+1066,GP-44548-D,in faucibus,Kids,20,5.61,7.09
+1067,VS-20528-A,natoque penatibus et,Kids,35,4.77,5.72
+1068,XJ-81504-K,et magnis dis parturient,Health,60,40.15,48.1
+1069,UJ-07736-N,nullam porttitor lacus,Toys,60,3.36,4.49
+1070,XN-69670-X,tristique fusce congue,Baby,30,1.88,2.43
+1071,WZ-62112-L,amet sapien dignissim,Books,6,34.96,48.84
+1072,NW-68577-L,purus eu magna,Electronics,56,38.95,48.47
+1073,UK-32957-F,tortor id nulla ultrices,Health,63,44.88,59.98
+1074,RV-44689-V,pede morbi,Kids,67,18.73,24.54
+1075,QO-29696-N,auctor gravida,Outdoors,19,32.31,38.09
+1076,VZ-10019-X,maecenas pulvinar,Kids,26,41.68,56.61
+1077,XM-09927-I,aenean auctor gravida sem praesent,Outdoors,1,23.12,30.43
+1078,LH-02605-D,fusce lacus purus aliquet,Home,20,17.68,20.82
+1079,DC-11616-A,nonummy integer non velit donec,Games,24,27.05,32.36
+1080,VA-58259-D,potenti in,Automotive,5,24.48,29.86
+1081,PB-67267-J,nam congue risus semper,Outdoors,53,43.73,51.27
+1082,MO-05393-U,donec ut mauris eget,Electronics,68,8.90,10.43
+1083,MN-47524-S,placerat praesent blandit,Games,66,11.13,15.2
+1084,TQ-59932-K,pellentesque volutpat,Baby,59,15.63,21.06
+1085,GE-78636-Z,curae nulla dapibus dolor,Health,51,29.66,37.8
+1086,HA-53589-P,morbi vel,Tools,42,42.57,50.2
+1087,ZQ-85289-U,sit amet eleifend pede,Toys,14,38.48,50.27
+1088,QM-92988-J,cubilia curae nulla dapibus,Jewelery,73,35.15,46.59
+1089,FP-27793-U,nulla dapibus dolor,Beauty,39,15.49,21.49
+1090,RS-86670-M,natoque penatibus et,Home,15,35.78,42.9
+1091,JM-50892-X,felis sed lacus morbi sem,Shoes,34,33.34,43.43
+1092,OT-52155-S,hac habitasse platea dictumst,Industrial,49,14.81,18.77
+1093,VJ-51613-G,quam sollicitudin,Books,28,47.94,60.4
+1094,EF-17762-P,lacinia erat,Tools,26,45.22,58.9
+1095,CQ-14567-L,donec ut dolor morbi,Kids,75,28.53,33.41
+1096,ON-30159-K,quis lectus,Jewelery,11,38.82,45.41
+1097,ZJ-35730-T,vivamus metus arcu,Sports,50,25.03,34.78
+1098,WB-11898-X,a nibh in quis,Jewelery,17,34.28,40.89
+1099,DO-94662-T,etiam faucibus,Kids,12,0.64,0.79
+1100,JR-89887-U,viverra pede ac diam cras,Automotive,23,27.67,36.72
+1101,QJ-66184-G,mauris lacinia sapien quis libero,Music,48,5.36,7.48
+1102,HC-50772-P,at nunc commodo,Garden,56,30.80,42.56
+1103,BA-24879-N,maecenas ut massa quis augue,Tools,70,8.27,10.7
+1104,DG-49157-O,in consequat ut nulla,Electronics,35,2.83,3.32
+1105,AJ-92802-N,a suscipit,Jewelery,50,27.69,34.77
+1106,TS-08673-D,auctor gravida sem praesent id,Jewelery,26,28.90,39.03
+1107,QS-61518-N,molestie lorem quisque ut,Computers,46,27.78,36.75
+1108,TI-16993-M,lectus aliquam sit amet diam,Clothing,8,47.09,55.21
+1109,TO-58590-U,aliquet at feugiat non pretium,Jewelery,21,47.94,66.19
+1110,JK-96196-M,velit vivamus vel,Kids,66,10.23,12.99
+1111,RS-00075-W,risus dapibus,Shoes,54,0.37,0.45
+1112,SB-57218-Z,vestibulum sagittis sapien cum sociis,Garden,16,47.22,63.11
+1113,JC-98569-X,tempus sit amet sem,Sports,14,41.52,52.07
+1114,EV-99578-R,eu sapien cursus vestibulum proin,Health,20,19.73,24.15
+1115,FC-60792-W,luctus rutrum,Industrial,14,49.12,64.2
+1116,IG-51540-A,dui maecenas,Home,75,49.54,64.09
+1117,XR-89608-K,velit id,Beauty,3,38.85,52.15
+1118,WT-18521-T,consequat morbi,Shoes,43,2.62,3.42
+1119,LG-48782-M,pharetra magna vestibulum aliquet ultrices,Kids,25,22.46,30.59
+1120,DR-69480-O,risus praesent lectus vestibulum,Books,6,28.64,33.8
+1121,LM-10118-J,suscipit a,Sports,68,25.62,35.36
+1122,BY-75221-P,vitae quam,Movies,21,21.87,26.3
+1123,DJ-97185-Y,diam in,Shoes,6,17.51,22.87
+1124,NE-73840-P,nibh in hac habitasse,Electronics,38,31.66,36.74
+1125,NX-31655-D,posuere cubilia,Health,4,40.33,53.15
+1126,TA-74922-M,parturient montes nascetur,Shoes,28,49.92,59.16
+1127,PC-42917-E,pede morbi,Tools,61,49.20,66.52
+1128,CU-29878-Z,venenatis non sodales sed,Industrial,59,17.86,22.42
+1129,VB-86805-F,justo in hac habitasse platea,Music,34,24.76,31.53
+1130,ES-05491-X,semper sapien,Clothing,79,13.99,17.75
+1131,GI-65117-A,vitae mattis nibh ligula nec,Shoes,70,48.10,66.87
+1132,RQ-98406-J,commodo placerat praesent blandit nam,Health,61,29.08,38.86
+1133,ZA-00167-Y,vivamus vestibulum,Sports,14,18.25,24.11
+1134,SA-50116-O,amet nunc,Outdoors,56,33.41,46.55
+1135,FH-76172-A,massa tempor convallis nulla neque,Automotive,28,29.02,34.1
+1136,MF-46407-B,blandit ultrices,Outdoors,58,9.59,12.97
+1137,YV-51247-C,diam nam tristique tortor eu,Games,51,22.59,27.44
+1138,SI-07895-O,malesuada in imperdiet,Baby,68,18.41,21.46
+1139,DM-70244-R,pellentesque at nulla suspendisse,Home,43,17.01,19.63
+1140,XA-27714-U,pellentesque quisque,Kids,30,42.28,53.85
+1141,CM-03050-H,morbi quis tortor id,Outdoors,39,41.99,49.58
+1142,RK-06605-C,dictumst morbi vestibulum velit,Industrial,47,36.72,48.1
+1143,GK-60344-M,eu orci mauris lacinia sapien,Beauty,13,18.98,26.01
+1144,VI-51493-M,nunc commodo placerat praesent blandit,Baby,71,33.62,38.72
+1145,AM-71193-E,nam congue risus semper,Tools,53,25.88,35.02
+1146,TQ-21296-E,turpis eget,Tools,14,22.17,28.02
+1147,GC-45922-A,vestibulum ante ipsum primis in,Toys,68,32.83,41.06
+1148,ZF-60937-H,ipsum primis in,Outdoors,10,17.46,20.65
+1149,KE-12784-I,imperdiet et commodo,Grocery,10,14.80,17.82
+1150,TH-29754-W,sit amet,Automotive,31,2.89,3.68
+1151,LR-56188-F,porttitor pede,Kids,75,47.23,59.33
+1152,YF-80955-S,dignissim vestibulum,Toys,68,41.82,52.65
+1153,YZ-52685-J,posuere nonummy integer non velit,Shoes,2,27.67,36.44
+1154,NH-12742-E,suspendisse potenti nullam,Games,77,3.05,4.14
+1155,QM-49422-H,lectus vestibulum quam sapien varius,Music,62,39.56,53.1
+1156,MF-69817-U,potenti in eleifend quam a,Computers,41,6.61,7.76
+1157,MD-18662-B,aliquet ultrices erat tortor,Outdoors,79,37.28,51.86
+1158,ZR-90182-G,consequat lectus in,Industrial,11,2.68,3.74
+1159,TW-28238-Z,tincidunt lacus at,Baby,57,5.96,7.67
+1160,LY-30395-U,eu sapien cursus vestibulum proin,Games,34,46.59,57.3
+1161,XT-93574-Q,eu nibh quisque id,Jewelery,2,15.35,19.34
+1162,BP-53441-S,ante ipsum,Jewelery,47,17.09,21.16
+1163,VX-72486-D,sit amet,Baby,55,23.34,31.22
+1164,RL-56442-R,quam nec dui luctus rutrum,Computers,71,6.31,7.77
+1165,YA-43420-X,maecenas ut massa quis,Health,29,34.54,45.74
+1166,VZ-02359-N,lacus at velit vivamus,Grocery,77,37.19,47.9
+1167,DQ-89045-N,nunc commodo placerat,Games,27,7.14,8.36
+1168,GM-18815-J,quisque arcu libero rutrum ac,Garden,9,21.44,25.76
+1169,CY-19978-X,dui nec nisi volutpat,Health,33,28.18,38.44
+1170,KW-31526-J,lorem ipsum dolor,Beauty,26,28.93,36.74
+1171,AT-65290-Y,praesent id massa,Computers,36,7.71,9.66
+1172,JO-46785-I,nulla neque libero convallis,Clothing,45,24.84,30.35
+1173,PT-33965-N,mauris laoreet ut rhoncus,Tools,8,39.92,46.71
+1174,GZ-04477-P,ac tellus semper,Electronics,40,27.15,31.8
+1175,VC-17020-A,augue vestibulum ante ipsum primis,Outdoors,28,29.74,41.13
+1176,PT-28198-M,eros viverra eget,Sports,33,13.88,16.74
+1177,VY-15499-Y,interdum mauris,Automotive,25,43.79,52.67
+1178,VI-79798-K,suscipit nulla elit ac nulla,Home,9,17.48,22.48
+1179,ER-22917-S,integer tincidunt ante,Automotive,58,42.95,58.2
+1180,TP-05474-B,molestie hendrerit at vulputate,Computers,20,27.19,32.46
+1181,XL-60501-K,ligula suspendisse ornare,Computers,39,40.75,56.47
+1182,LI-42614-Y,laoreet ut rhoncus,Beauty,13,13.15,15.17
+1183,EA-53659-Q,auctor sed tristique,Outdoors,79,43.53,52.31
+1184,AH-31978-Y,arcu adipiscing molestie hendrerit,Electronics,13,25.43,33.05
+1185,TV-88793-X,et magnis dis parturient montes,Sports,12,42.56,57.23
+1186,AE-53143-T,sed sagittis nam,Electronics,64,7.22,9.52
+1187,AQ-19923-F,nec euismod scelerisque quam turpis,Outdoors,11,26.57,34.35
+1188,BM-52930-T,sapien urna pretium,Tools,58,39.53,52.01
+1189,WC-43650-C,congue elementum,Jewelery,45,14.79,17.95
+1190,NQ-35453-B,fermentum donec ut mauris eget,Games,17,9.18,11.39
+1191,PC-77092-T,euismod scelerisque quam turpis adipiscing,Health,63,9.42,11.33
+1192,ZW-54093-P,sagittis sapien cum,Computers,1,46.83,54.53
+1193,CF-52738-K,risus dapibus,Shoes,3,28.01,34.36
+1194,WU-25421-Y,ut volutpat sapien,Electronics,6,27.51,37.05
+1195,GS-69094-P,mattis odio,Books,65,16.89,22.59
+1196,HT-30216-B,justo pellentesque viverra pede ac,Garden,50,14.47,17.27
+1197,LI-35466-S,porttitor lacus at turpis donec,Sports,15,47.18,62.65
+1198,KM-58132-G,commodo placerat praesent,Automotive,49,2.22,3.03
+1199,NR-35383-T,ipsum primis in faucibus orci,Toys,15,1.38,1.87
+1200,BA-19878-D,magnis dis parturient montes,Clothing,35,39.81,53.69
+1201,ZA-41126-Q,semper interdum mauris ullamcorper,Outdoors,68,42.58,53.73
+1202,TB-66887-Z,tincidunt eget,Electronics,7,37.44,49.87
+1203,GC-36680-G,mi integer ac neque duis,Health,51,43.55,60.21
+1204,OV-33494-Y,aliquet at feugiat non pretium,Electronics,11,2.13,2.69
+1205,XT-32815-I,nulla tellus in sagittis dui,Tools,33,24.99,33.34
+1206,HV-98665-F,in lectus pellentesque at nulla,Toys,57,14.75,20.25
+1207,QJ-78182-I,nibh fusce lacus purus aliquet,Tools,15,32.53,40.44
+1208,CT-27354-G,nulla elit ac,Shoes,71,10.51,12.26
+1209,MD-27217-E,nullam sit amet,Sports,43,31.21,39.69
+1210,SU-86348-J,magna ac,Computers,38,15.10,19.22
+1211,JW-50424-M,cubilia curae duis,Industrial,34,31.08,43.1
+1212,YX-31324-G,venenatis turpis,Toys,22,26.72,35.61
+1213,FG-26656-C,consectetuer adipiscing elit proin risus,Jewelery,1,6.61,8.76
+1214,QP-80753-D,lorem quisque ut erat curabitur,Toys,38,10.19,14.2
+1215,AH-36811-U,condimentum neque sapien placerat,Shoes,65,18.02,21.12
+1216,NA-46464-B,dui nec nisi volutpat eleifend,Movies,76,17.05,20.58
+1217,NF-68623-H,etiam justo etiam pretium iaculis,Shoes,27,3.11,3.99
+1218,DZ-61474-W,id pretium,Grocery,69,14.24,18.77
+1219,TL-04395-V,euismod scelerisque quam,Health,26,19.55,27.32
+1220,VH-82563-K,velit nec nisi vulputate nonummy,Tools,53,28.74,39.34
+1221,LR-08055-P,dapibus nulla suscipit,Shoes,52,45.53,53.22
+1222,TB-82014-I,turpis adipiscing lorem,Health,33,7.63,8.88
+1223,DJ-69281-M,habitasse platea dictumst etiam faucibus,Baby,28,3.12,4.05
+1224,YI-10346-U,at ipsum ac tellus semper,Kids,53,40.34,56.3
+1225,CL-76933-B,libero ut massa volutpat convallis,Shoes,73,12.42,14.89
+1226,IJ-82875-W,sit amet turpis,Shoes,24,41.99,52.18
+1227,HT-58587-B,sapien cum sociis natoque,Tools,73,22.25,25.72
+1228,DE-51822-I,nulla ac enim in,Automotive,13,17.17,23.5
+1229,GQ-44060-D,faucibus orci luctus et ultrices,Jewelery,22,35.23,46.13
+1230,VO-88183-R,quisque porta volutpat,Grocery,30,36.59,49.59
+1231,QB-97503-S,tincidunt in leo,Jewelery,49,16.11,21.33
+1232,TG-66073-E,pede ullamcorper augue a suscipit,Toys,53,19.52,24.63
+1233,TD-26044-C,dapibus nulla suscipit ligula,Baby,30,28.09,33.67
+1234,JR-07998-W,dignissim vestibulum vestibulum,Grocery,63,31.21,43.67
+1235,MJ-00979-N,dui maecenas tristique,Garden,67,46.03,59.71
+1236,MD-27395-R,sit amet nunc viverra dapibus,Baby,42,19.97,24.91
+1237,RQ-82615-Y,sapien quis libero,Sports,49,43.56,56.35
+1238,YV-18952-F,cursus id turpis integer aliquet,Music,17,11.55,13.74
+1239,QI-11365-H,cum sociis natoque penatibus,Tools,7,6.44,7.55
+1240,AH-28995-Y,rhoncus sed vestibulum sit amet,Outdoors,71,49.59,66.4
+1241,MP-72601-U,lacus purus aliquet at feugiat,Industrial,50,28.81,37.12
+1242,US-71120-O,sollicitudin mi sit amet lobortis,Movies,32,36.55,44.83
+1243,ZM-39226-U,nam ultrices libero non,Shoes,69,29.86,36.37
+1244,IP-68106-Z,elit proin risus,Garden,56,23.75,32.32
+1245,OZ-03827-V,magnis dis,Music,20,21.06,27.13
+1246,KF-22667-O,ipsum primis in,Sports,73,27.63,35.79
+1247,GV-54319-Y,tristique fusce congue diam,Clothing,12,9.26,11.61
+1248,SE-77137-U,sit amet lobortis,Health,40,27.51,38.27
+1249,US-68054-Y,et ultrices posuere cubilia curae,Home,41,15.30,18.69
+1250,BR-98429-O,ligula nec sem duis aliquam,Garden,46,28.58,38.34
+1251,LW-91364-C,neque sapien placerat ante nulla,Books,51,18.20,21.81
+1252,MB-36190-K,blandit lacinia erat vestibulum,Music,13,11.70,13.51
+1253,ZQ-09022-Y,sit amet,Games,68,21.72,29.41
+1254,QB-32128-D,dapibus at,Tools,34,48.12,59.89
+1255,DH-86772-R,metus aenean fermentum donec ut,Electronics,53,45.85,54.52
+1256,NQ-27684-L,ac tellus semper interdum,Shoes,20,3.99,5.43
+1257,WF-00786-K,et ultrices posuere cubilia,Health,31,34.21,44.42
+1258,KA-30164-W,orci luctus et,Electronics,70,4.52,5.71
+1259,YE-61777-H,sagittis nam congue risus semper,Shoes,15,10.47,14.07
+1260,AJ-65725-K,est et,Movies,40,3.76,4.96
+1261,JZ-94059-T,tellus in,Industrial,11,26.26,33.45
+1262,AF-44226-E,neque sapien,Jewelery,9,23.91,30.61
+1263,CH-82419-B,pede justo eu massa,Tools,36,28.70,36.12
+1264,WJ-54347-C,blandit non interdum in ante,Kids,2,25.17,32.45
+1265,JT-41155-K,cubilia curae donec pharetra,Music,73,32.75,40.15
+1266,NG-49293-B,ut tellus,Clothing,78,48.89,67.95
+1267,CS-98106-E,arcu sed augue,Health,28,19.67,27.5
+1268,LG-69035-M,quam turpis adipiscing lorem vitae,Outdoors,48,20.08,24.08
+1269,LT-82704-R,sed tincidunt eu felis fusce,Industrial,21,17.44,20.6
+1270,RT-71654-O,leo maecenas,Grocery,71,32.96,45.98
+1271,RE-84337-Y,venenatis lacinia aenean,Books,70,41.11,52.63
+1272,VM-31602-W,sit amet,Toys,26,27.59,34.13
+1273,SD-37186-A,bibendum morbi non,Books,30,34.78,43.87
+1274,NH-75651-S,leo pellentesque ultrices mattis,Games,8,45.49,61.83
+1275,JL-99678-X,faucibus orci luctus,Grocery,23,29.90,38.94
+1276,JF-42295-T,mauris sit amet eros,Grocery,35,38.36,48.93
+1277,BC-10005-F,quam sollicitudin vitae consectetuer eget,Movies,13,34.15,46.53
+1278,XE-78668-G,semper porta,Tools,28,19.72,23.56
+1279,YG-49105-N,mi integer ac neque,Garden,28,48.34,64.35
+1280,OZ-79042-M,in consequat ut nulla,Music,60,6.12,7.12
+1281,YL-14424-G,rhoncus mauris enim,Books,11,18.44,21.35
+1282,HO-93448-N,nullam orci,Computers,73,24.00,32.54
+1283,PZ-34022-Q,metus arcu adipiscing molestie hendrerit,Grocery,30,43.92,54.58
+1284,BZ-78927-C,pulvinar lobortis est phasellus sit,Garden,10,12.88,16.76
+1285,TY-14428-U,vestibulum rutrum rutrum,Games,71,30.58,37.47
+1286,JK-34237-G,sed sagittis nam congue risus,Garden,38,41.11,51.21
+1287,OP-28604-P,congue diam id ornare,Music,3,17.47,20.33
+1288,XM-76044-S,cras in purus,Shoes,34,20.78,28.78
+1289,QJ-99170-H,rhoncus aliquam,Beauty,66,25.93,30.95
+1290,SZ-88281-T,volutpat sapien arcu sed augue,Beauty,19,20.19,23.3
+1291,DG-65383-V,ac consequat metus sapien,Clothing,11,42.03,55.59
+1292,ND-12625-F,in felis donec semper,Toys,13,17.98,24.43
+1293,BN-64541-G,sit amet,Jewelery,7,41.77,51.71
+1294,FA-64094-A,cras pellentesque volutpat dui,Industrial,70,27.64,37.16
+1295,WH-83468-E,sed lacus,Grocery,58,47.30,58.6
+1296,TW-45375-M,nulla dapibus dolor,Jewelery,7,35.69,42.47
+1297,YU-45028-H,in sapien iaculis congue vivamus,Garden,45,7.88,9.49
+1298,KS-91876-O,vivamus tortor duis mattis,Garden,73,22.04,28.35
+1299,AW-45615-Q,pulvinar lobortis est phasellus sit,Music,61,35.62,46.46
+1300,QR-35298-G,ultrices posuere cubilia curae mauris,Industrial,6,6.13,8.44
+1301,CR-49222-Q,venenatis non sodales sed tincidunt,Games,40,18.55,25.49
+1302,KN-94123-L,elementum in hac habitasse,Movies,3,33.48,38.95
+1303,UQ-38446-P,ultricies eu,Books,48,34.95,40.72
+1304,CY-12144-Z,mauris laoreet ut,Outdoors,50,49.37,68.22
+1305,QR-69111-Q,at velit vivamus vel,Music,79,31.73,39.73
+1306,QY-18297-N,porttitor lorem,Outdoors,50,40.71,54.52
+1307,JL-34180-B,volutpat erat quisque erat,Shoes,12,23.05,27.11
+1308,DZ-82621-B,in quam,Automotive,3,13.34,16.57
+1309,TL-21976-A,morbi vel lectus in quam,Shoes,66,15.14,18.58
+1310,ZC-15391-N,elementum eu interdum eu tincidunt,Grocery,16,42.06,57.01
+1311,YK-87883-H,faucibus orci luctus et,Jewelery,30,8.28,11.02
+1312,IQ-79068-S,pede venenatis non sodales sed,Games,73,3.49,4.08
+1313,KG-24243-O,sodales sed,Kids,40,9.04,11.85
+1314,SX-15010-R,interdum venenatis turpis,Kids,7,16.76,20.15
+1315,EM-50915-S,congue risus semper porta,Clothing,66,29.83,37.26
+1316,QS-75881-U,pulvinar sed nisl,Clothing,20,27.77,35.55
+1317,IB-36221-Z,mattis nibh ligula,Grocery,28,15.69,18.37
+1318,XZ-75225-B,convallis nunc proin at turpis,Sports,44,43.06,59.49
+1319,QJ-69179-F,maecenas pulvinar lobortis est,Health,64,48.70,66.84
+1320,OI-66710-S,turpis adipiscing,Industrial,55,5.49,6.49
+1321,ZN-75518-H,bibendum imperdiet nullam,Health,4,46.43,59.71
+1322,GS-73277-R,faucibus orci luctus,Baby,7,22.22,26.86
+1323,KL-07506-G,magna bibendum imperdiet nullam orci,Shoes,51,32.09,44.01
+1324,CR-34161-M,ornare consequat lectus,Books,37,30.23,35.64
+1325,OQ-21454-M,in quis justo,Grocery,61,10.63,12.85
+1326,DS-27520-K,nulla facilisi cras non velit,Garden,32,32.73,39.67
+1327,YE-42941-Q,enim sit,Health,77,11.68,15.37
+1328,ST-68490-U,mauris eget,Electronics,11,49.31,61.8
+1329,WV-67663-J,et ultrices posuere,Industrial,37,31.50,42.2
+1330,JS-68418-T,ac leo pellentesque ultrices,Movies,74,42.40,54.32
+1331,VX-31762-N,pede libero quis orci,Garden,76,29.00,38.83
+1332,ML-90934-V,enim leo rhoncus sed vestibulum,Beauty,69,15.48,20.08
+1333,GE-03248-C,a pede,Jewelery,80,40.14,49.55
+1334,FU-73235-D,euismod scelerisque quam,Health,28,2.58,3.44
+1335,CV-68922-R,aliquet pulvinar sed,Shoes,68,45.58,60.16
+1336,JG-84740-T,amet lobortis sapien sapien,Books,76,47.05,64.65
+1337,DX-76358-B,vestibulum vestibulum,Clothing,45,9.06,10.84
+1338,IC-24608-Z,amet sapien dignissim vestibulum,Electronics,53,28.70,37.73
+1339,SG-82635-N,odio justo sollicitudin ut,Movies,61,21.46,29.77
+1340,AN-96681-S,interdum venenatis turpis enim,Baby,18,1.89,2.6
+1341,NU-79018-T,ipsum ac tellus semper,Beauty,72,29.27,36.93
+1342,VD-88781-I,nulla nisl nunc nisl duis,Music,7,14.22,17.96
+1343,GI-07920-P,sapien arcu,Home,61,41.71,54.01
+1344,ZI-73428-F,donec odio justo,Beauty,3,18.36,22.16
+1345,ED-78179-J,posuere metus vitae,Sports,57,35.13,48.13
+1346,BZ-19606-L,velit nec nisi,Computers,74,43.74,51.7
+1347,KY-05709-T,mi nulla,Jewelery,27,29.57,34.17
+1348,HZ-06342-D,aenean auctor gravida sem,Electronics,35,11.98,15.87
+1349,LR-23505-T,quam sapien varius ut,Shoes,43,42.88,55.93
+1350,LJ-75291-S,quis turpis eget,Shoes,67,47.68,61.61
