@@ -137,30 +137,39 @@ CREATE TABLE `Invoice_Detail` (
   PRIMARY KEY (`id_invo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+-- CREATE TABLE `Sku_Location` (
+--   `sl_sku_nb` BIGINT(14) NOT NULL,
+--   `sl_locat_id` INT NOT NULL,
+--   PRIMARY KEY (`sl_sku_nb`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Location_Sku` (
-  `ls_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
-  `ls_locat_id` INT NOT NULL,
-  `ls_sku_nb` BIGINT(14) DEFAULT NULL,
-  `ls_type_nm` varchar(20) DEFAULT NULL,
-  `ls_ref_cd` BIGINT(14) DEFAULT NULL,
-  `ls_moved_qy` int(8) DEFAULT NULL,
-  PRIMARY KEY (`ls_id`)
+CREATE TABLE `Inventory_Rotation` (
+  `ir_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
+  `ir_sku_nb` BIGINT(14) NOT NULL,
+  -- `ir_locat_id` INT NOT NULL,             -- to remove
+  `ir_type_nm` varchar(20) DEFAULT NULL,
+  `ir_ref_cd` BIGINT(14) DEFAULT NULL,
+  `ir_moved_qy` int(8) NOT NULL,
+  -- `ir_qy` int(8) DEFAULT NULL,            -- to remove
+  PRIMARY KEY (`ir_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `QOH` (
-  `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
+  `qoh_sku_nb` BIGINT(14) NOT NULL,
+-- `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
+-- `qoh_locat_id` INT NOT NULL,
+   
   `qoh_locat_id` INT NOT NULL,
-  `qoh_sku_nb` BIGINT(14) DEFAULT NULL,
   `qoh_qy` int(8) DEFAULT NULL,
-  PRIMARY KEY (`qoh_id`)
+  PRIMARY KEY (`qoh_sku_nb`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 -- DROP PROCEDURE IF EXISTS PROC_DROP_FOREIGN_KEY;
 --     DELIMITER $$
@@ -227,6 +236,7 @@ ADD CONSTRAINT `PO_Detail_ibfk_2` FOREIGN KEY (`pd_sku_nb`) REFERENCES `Part` (`
 
 ALTER TABLE `PO_Detail` ADD UNIQUE `PO_Detail_index1`(`pd_po_nb`, `pd_sku_nb`);
 
+
 ALTER TABLE `Invoice_Header` 
 ADD CONSTRAINT `Invoice_Header_ibfk_1` FOREIGN KEY (`ih_cu_id`) REFERENCES `Customer` (`cu_id`);
 
@@ -244,32 +254,41 @@ ADD CONSTRAINT `Invoice_Detail_ibfk_2` FOREIGN KEY (`id_sku_nb`) REFERENCES `Par
 ALTER TABLE `Invoice_Detail` ADD UNIQUE `Invoice_Detail_index1`(`id_invo_nb`, `id_sku_nb`);
 
 
-ALTER TABLE `Location_Sku` 
-ADD CONSTRAINT `Location_Sku_ibfk_1` FOREIGN KEY (`ls_locat_id`) REFERENCES `Location` (`lo_locat_id`);
+-- ALTER TABLE `Sku_Location` 
+-- ADD CONSTRAINT `Sku_Location_ibfk_1` FOREIGN KEY (`sl_locat_id`) REFERENCES `Location` (`lo_locat_id`);
 
 
-ALTER TABLE `Location_Sku` 
-ADD CONSTRAINT `Location_Sku_ibfk_2` FOREIGN KEY (`ls_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
+-- ALTER TABLE `Sku_Location` 
+-- ADD CONSTRAINT `Sku_Location_ibfk_2` FOREIGN KEY (`sl_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
 
-ALTER TABLE `QOH` 
-ADD CONSTRAINT `QOH_ibfk_1` FOREIGN KEY (`qoh_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
+-- ALTER TABLE `Location_Sku` ADD UNIQUE `Location_Sku_index1`(`sl_locat_id`, `sl_sku_nb`);
 
-ALTER TABLE `QOH` ADD UNIQUE `qoh_index1`(`qoh_locat_id`, `qoh_sku_nb`);
+-- ALTER TABLE `Inventory_Rotation` 
+-- ADD CONSTRAINT `Inventory_Rotation_ibfk_1` FOREIGN KEY (`ir_sku_nb`) REFERENCES `QOH` (`qoh_sku_nb`);
 
--- ALTER TABLE `Invoice_Detail` 
--- ADD CONSTRAINT `Invoice_Detail_ibfk_4` FOREIGN KEY (`id_catgry_nm`) REFERENCES `Category` (`cat_catgry_nm`);
+-- ALTER TABLE `QOH` 
+-- ADD CONSTRAINT `QOH_ibfk_1` FOREIGN KEY (`qoh_locat_id`) REFERENCES `Location` (`lo_locat_id`);
 
--- ALTER TABLE `Invoice_Detail` 
--- ADD CONSTRAINT `Invoice_Detail_ibfk_4` FOREIGN KEY (`id_tax_id`) REFERENCES `Tax` (`ta_tax_id`);
+-- ALTER TABLE `QOH` ADD UNIQUE `QOH_index1`(`qoh_sku_nb`, `qoh_locat_id`);
 
--- USE ecommv3;
--- source Tax.sql;
+
+
+
+
+-- ALTER TABLE `QOH` 
+-- ADD CONSTRAINT `QOH_ibfk_1` FOREIGN KEY (`qoh_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
+
+
 
 LOAD DATA LOCAL INFILE 'Category_ecommv3.csv' INTO TABLE `Category`
 fields terminated BY ","
 lines terminated BY "\n";
 
 LOAD DATA LOCAL INFILE 'State_ecommv3.csv' INTO TABLE `State`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Tax_ecommv3.csv' INTO TABLE `Tax`
 fields terminated BY ","
 lines terminated BY "\n";
 
@@ -290,26 +309,37 @@ LOAD DATA LOCAL INFILE 'Part_ecommv3.csv' INTO TABLE `Part`
 fields terminated BY ","
 lines terminated BY "\n";
 
--- LOAD DATA LOCAL INFILE 'data/PO_Header.csv' INTO TABLE `PO_Header`
+LOAD DATA LOCAL INFILE 'PO_Header_ecommv3.csv' INTO TABLE `PO_Header`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'PO_Detail_ecommv3.csv' INTO TABLE `PO_Detail`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Invoice_Header_ecommv3.csv' INTO TABLE `Invoice_Header`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Invoice_Detail_ecommv3.csv' INTO TABLE `Invoice_Detail`
+fields terminated BY ","
+lines terminated BY "\n";
+
+
+-- LOAD DATA LOCAL INFILE 'Sku_Location_ecommv3.csv' INTO TABLE `Sku_Location`
 -- fields terminated BY ","
 -- lines terminated BY "\n";
 
--- LOAD DATA LOCAL INFILE 'data/PO_Detail.csv' INTO TABLE `PO_Detail`
--- fields terminated BY ","
--- lines terminated BY "\n";
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_INV_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
 
--- LOAD DATA LOCAL INFILE 'data/Invoice_Header.csv' INTO TABLE `Invoice_Header`
--- fields terminated BY ","
--- lines terminated BY "\n";
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
 
--- LOAD DATA LOCAL INFILE 'data/Invoice_Detail.csv' INTO TABLE `Invoice_Detail`
--- fields terminated BY ","
--- lines terminated BY "\n";
-
--- SHOW WARNINGS;
-
--- LOAD DATA LOCAL INFILE 'data/Inventory.csv' INTO TABLE `Inventory`
--- fields terminated BY ","
--- lines terminated BY "\n";
+LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
+fields terminated BY ","
+lines terminated BY "\n";
 
 SHOW WARNINGS;
