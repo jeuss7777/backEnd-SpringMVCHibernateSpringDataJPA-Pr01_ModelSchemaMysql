@@ -147,6 +147,17 @@ CREATE TABLE `Invoice_Detail` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `QOH` (
+  `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
+  `qoh_sku_nb` BIGINT(14) NOT NULL,   
+  `qoh_locat_id` INT NOT NULL,
+  `qoh_qy` int(8) DEFAULT NULL,
+  PRIMARY KEY (`qoh_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Inventory_Rotation` (
   `ir_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
   --  `ir_sku_nb` BIGINT(14) NOT NULL,
@@ -156,17 +167,6 @@ CREATE TABLE `Inventory_Rotation` (
   `ir_moved_qy` int(8) NOT NULL,
   -- `ir_qy` int(8) DEFAULT NULL,            -- to remove
   PRIMARY KEY (`ir_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*!40101 SET character_set_client = @saved_cs_client */;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `QOH` (
-  `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
-  `qoh_sku_nb` BIGINT(14) NOT NULL,   
-  `qoh_locat_id` INT NOT NULL,
-  `qoh_qy` int(8) DEFAULT NULL,
-  PRIMARY KEY (`qoh_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- DROP PROCEDURE IF EXISTS PROC_DROP_FOREIGN_KEY;
@@ -333,16 +333,18 @@ lines terminated BY "\n";
 -- fields terminated BY ","
 -- lines terminated BY "\n";
 
-LOAD DATA LOCAL INFILE 'Inventory_Rotation_INV_02_ecommv3.csv' INTO TABLE `Inventory_Rotation`
-fields terminated BY ","
-lines terminated BY "\n";
-
--- LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_ecommv3.csv' INTO TABLE `Inventory_Rotation`
--- fields terminated BY ","
--- lines terminated BY "\n";
 
 LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
 fields terminated BY ","
 lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_INV_02_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_02_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
+
 
 SHOW WARNINGS;
