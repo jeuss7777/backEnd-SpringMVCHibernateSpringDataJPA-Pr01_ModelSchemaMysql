@@ -138,22 +138,12 @@ CREATE TABLE `Invoice_Detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
--- CREATE TABLE `Sku_Location` (
---   `sl_sku_nb` BIGINT(14) NOT NULL,
---   `sl_locat_id` INT NOT NULL,
---   PRIMARY KEY (`sl_sku_nb`)
--- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*!40101 SET character_set_client = @saved_cs_client */;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `QOH` (
-  `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
-  `qoh_sku_nb` BIGINT(14) NOT NULL,   
-  `qoh_locat_id` INT NOT NULL,
-  `qoh_qy` int(8) DEFAULT NULL,
-  PRIMARY KEY (`qoh_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `Sku_Location` (
+   `sl_id` INT NOT NULL AUTO_INCREMENT,
+   `sl_sku_nb` BIGINT(14) NOT NULL,
+   `sl_locat_id` INT NOT NULL,
+   PRIMARY KEY (`sl_id`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -161,13 +151,27 @@ CREATE TABLE `QOH` (
 CREATE TABLE `Inventory_Rotation` (
   `ir_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
   --  `ir_sku_nb` BIGINT(14) NOT NULL,
-  `ir_qoh_id` BIGINT(14) NOT NULL,             -- to remove
+  `ir_sl_id` INT NOT NULL,
   `ir_type_nm` varchar(20) DEFAULT NULL,
   `ir_ref_cd` BIGINT(14) DEFAULT NULL,
   `ir_moved_qy` int(8) NOT NULL,
   -- `ir_qy` int(8) DEFAULT NULL,            -- to remove
   PRIMARY KEY (`ir_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `QOH` (
+  `qoh_id` BIGINT(14) NOT NULL AUTO_INCREMENT,
+  `qoh_sl_id` INT NOT NULL,
+  -- `qoh_sku_nb` BIGINT(14) NOT NULL,   
+  -- `qoh_locat_id` INT NOT NULL,
+  `qoh_qy` int(8) DEFAULT NULL,
+  PRIMARY KEY (`qoh_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 
 -- DROP PROCEDURE IF EXISTS PROC_DROP_FOREIGN_KEY;
 --     DELIMITER $$
@@ -251,32 +255,23 @@ ADD CONSTRAINT `Invoice_Detail_ibfk_2` FOREIGN KEY (`id_sku_nb`) REFERENCES `Par
 
 ALTER TABLE `Invoice_Detail` ADD UNIQUE `Invoice_Detail_index1`(`id_invo_nb`, `id_sku_nb`);
 
+ALTER TABLE `Sku_Location` 
+ADD CONSTRAINT `Sku_Location_ibfk_1` FOREIGN KEY (`sl_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
 
--- ALTER TABLE `Sku_Location` 
--- ADD CONSTRAINT `Sku_Location_ibfk_1` FOREIGN KEY (`sl_locat_id`) REFERENCES `Location` (`lo_locat_id`);
-
-
--- ALTER TABLE `Sku_Location` 
--- ADD CONSTRAINT `Sku_Location_ibfk_2` FOREIGN KEY (`sl_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
-
--- ALTER TABLE `Location_Sku` ADD UNIQUE `Location_Sku_index1`(`sl_locat_id`, `sl_sku_nb`);
+ALTER TABLE `Sku_Location` 
+ADD CONSTRAINT `Sku_Location_ibfk_2` FOREIGN KEY (`sl_locat_id`) REFERENCES `Location` (`lo_locat_id`);
 
 
-
-ALTER TABLE `QOH` 
-ADD CONSTRAINT `QOH_ibfk_1` FOREIGN KEY (`qoh_sku_nb`) REFERENCES `Part` (`pa_sku_nb`);
-
-ALTER TABLE `QOH` 
-ADD CONSTRAINT `QOH_ibfk_2` FOREIGN KEY (`qoh_locat_id`) REFERENCES `Location` (`lo_locat_id`);
+ALTER TABLE `Sku_Location` ADD UNIQUE `Sku_Location`(`sl_sku_nb`, `sl_locat_id`);
 
 
-ALTER TABLE `QOH` ADD UNIQUE `QOH_index1`(`qoh_sku_nb`, `qoh_locat_id`);
+-- ALTER TABLE `QOH` ADD UNIQUE `QOH_index1`(`qoh_sku_nb`, `qoh_locat_id`);
 
 ALTER TABLE `Inventory_Rotation` 
-ADD CONSTRAINT `Inventory_Rotation_ibfk_1` FOREIGN KEY (`ir_qoh_id`) REFERENCES `QOH` (`qoh_id`);
+ADD CONSTRAINT `Inventory_Rotation_ibfk_1` FOREIGN KEY (`ir_sl_id`) REFERENCES `Sku_Location` (`sl_id`);
 
-
-
+ALTER TABLE `QOH` 
+ADD CONSTRAINT `QOH_ibfk_1` FOREIGN KEY (`qoh_sl_id`) REFERENCES `Sku_Location` (`sl_id`);
 
 
 
@@ -329,22 +324,23 @@ fields terminated BY ","
 lines terminated BY "\n";
 
 
--- LOAD DATA LOCAL INFILE 'Sku_Location_ecommv3.csv' INTO TABLE `Sku_Location`
+LOAD DATA LOCAL INFILE 'Sku_Location_ecommv3.csv' INTO TABLE `Sku_Location`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_INV_03_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
+
+LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_03_ecommv3.csv' INTO TABLE `Inventory_Rotation`
+fields terminated BY ","
+lines terminated BY "\n";
+
+-- LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
 -- fields terminated BY ","
 -- lines terminated BY "\n";
 
 
-LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
-fields terminated BY ","
-lines terminated BY "\n";
-
-LOAD DATA LOCAL INFILE 'Inventory_Rotation_INV_02_ecommv3.csv' INTO TABLE `Inventory_Rotation`
-fields terminated BY ","
-lines terminated BY "\n";
-
-LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_02_ecommv3.csv' INTO TABLE `Inventory_Rotation`
-fields terminated BY ","
-lines terminated BY "\n";
 
 
 SHOW WARNINGS;
