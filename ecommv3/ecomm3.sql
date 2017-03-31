@@ -336,9 +336,9 @@ LOAD DATA LOCAL INFILE 'Inventory_Rotation_PO_03_ecommv3.csv' INTO TABLE `Invent
 fields terminated BY ","
 lines terminated BY "\n";
 
--- LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
--- fields terminated BY ","
--- lines terminated BY "\n";
+LOAD DATA LOCAL INFILE 'QOH_ecommv3.csv' INTO TABLE `QOH`
+fields terminated BY ","
+lines terminated BY "\n";
 
 
 
