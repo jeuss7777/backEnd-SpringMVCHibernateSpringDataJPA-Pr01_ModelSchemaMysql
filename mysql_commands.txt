@@ -1,2 +1,5 @@
 mysql -uroot -p employee < EmployeeDB.sql
+
+mysql --local-infile -uroot -p ecommv4 < ecomm4.sql  <--  this query (ecommv4) includes Load queries
+
 mysqldump -hlocalhost -uroot -p ecomm --compact --no-data > mySql_ecomm.sql
